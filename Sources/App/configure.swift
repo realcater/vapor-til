@@ -70,11 +70,11 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
 
   config.prefer(LeafRenderer.self, for: ViewRenderer.self)
   config.prefer(MemoryKeyedCache.self, for: KeyedCache.self)
-  /*
+  
   guard let sendGridAPIKey = Environment.get("SENDGRID_API_KEY") else {
     fatalError("No Send Grid API Key specified")
   }
   let sendGridConfig = SendGridConfig(apiKey: sendGridAPIKey)
   services.register(sendGridConfig)
- */
+ 
 }

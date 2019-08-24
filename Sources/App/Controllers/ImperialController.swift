@@ -29,7 +29,7 @@
 import Vapor
 import Imperial
 import Authentication
-/*
+
 struct ImperialController: RouteCollection {
   func boot(router: Router) throws {
     guard let googleCallbackURL = Environment.get("GOOGLE_CALLBACK_URL") else {
@@ -150,4 +150,4 @@ extension GitHub {
       return try response.content.syncDecode([GitHubEmailInfo].self)
     }
   }
-}*/
+}
